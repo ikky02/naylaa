@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Haii Sayangku 💖</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1, h2 {
+      font-weight: bold;
+      color: #d63384;
+    }
+    video {
+      width: 200px;
+      border-radius: 20px;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff99cc;
+      color: white;
+      cursor: pointer;
+    }
+    #tidak {
+      position: absolute;
+    }
+    .creator {
+      margin-top: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Haii sayangku</h1>
+
+  <!-- Ganti gambar jadi video -->
+  <video autoplay loop muted>
+    <source src="fid-onay.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video.
+  </video>
+
+  <h2>Jangan nangisss lagi yw harus heppiiiii</h2>
+
+  <div>
+    <button onclick="alert('Yeaayy! Aku sayang kamu! ❤️')">Iya</button>
+    <button id="tidak">Tidak</button>
+  </div>
+
+  <div class="creator">CREATED BY : IKI</div>
+
+  <script>
+    const btn = document.getElementById("tidak");
+    btn.addEventListener("mouseover", function () {
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 100));
+      btn.style.left = x + "px";
+      btn.style.top = y + "px";
+    });
+  </script>
+
+</body>
+</html>
